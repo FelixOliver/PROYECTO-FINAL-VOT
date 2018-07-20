@@ -20,11 +20,17 @@
 
 > La Data usada es una propuesta por un Benchmark, que son 70 videos grabados por drones con distintos escenarios y objetos como animales, personas y carros. Cada video esta dividido en frames y cada carpeta de video contiene un .txt donde se encuentra las coordenas del Bounding Box. Esto nos sirve para analisar la robustez del algoritmo, comparando la prediccion con el verdadero.
 
+> La Data se encuentra en el siguiente [link](https://www.dropbox.com/s/s1fj99s2six4lrs/DTB70.tar.gz?dl=0)
+
 ## Arquitectura Utilizada
 
-> La arquitectura utilizada es la por MDNet
 
-![](https://www.google.com/search?q=MDNet&source=lnms&tbm=isch&sa=X&ved=0ahUKEwj7z-P53q7cAhWFrVkKHbXOAaoQ_AUICigB&biw=1879&bih=941#imgrc=OtIzFs1LnaxYIM)
+> La arquitectura utilizada es la que se encuentra en mdnet.png en este repositorio.
+
+> MDNet brinda bounding box aleatorios en todo el frame para distintos dominios, se etiqueta a bounding box como negativos y positivos, eliminado los negativos y el dominio minorizando hasta ser el más sercano al objeto.
+
+> El procedimiento visual del aprendizaje que hace esta en iteranciones.png.
+
 
 ## Implementado con
 * [Matlab]
